@@ -32,8 +32,8 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // database connection
-const URI ="";
-const OPTIONS = {user:"",pass:"",autoIndex:true};
+const URI ="mongodb+srv://<username>:<password>@cluster0.j7kvy.mongodb.net/CRUD?retryWrites=true&w=majority";
+const OPTIONS = {user:"monayem-crud",pass:"nBG50ic8D6L4oV0A", autoIndex:true};
 mongoose.connect(URI,OPTIONS,(err)=>{
     console.log("database connection success");
   
