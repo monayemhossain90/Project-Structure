@@ -5,9 +5,9 @@ const router =express.Router();
 // API 
 
 router.post("/insertProduct",ProductController.insertProduct);
-router.get("/readProduct",ProductController.readProduct)
+router.post("/readProduct",ProductController.readProduct)
 router.post("/updateProduct/:id",ProductController.updateProduct)
-router.post("/deletProduct",ProductController.deleteProduct)
+router.post("/deleteProduct/:id",ProductController.deleteProduct)
 
 
 module.exports = router;

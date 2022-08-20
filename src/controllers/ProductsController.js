@@ -24,7 +24,7 @@ exports.readProduct = (req, res) => {
     if (err) {
       res.status(400).json({ status: "Failed", data: err });
     } else {
-      res.status(200).json({ status: "failed", data: data });
+      res.status(200).json({ status: "Success", data: data });
     }
   });
 };
